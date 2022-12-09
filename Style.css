@@ -1,0 +1,71 @@
+form,ul#nav li{
+    display: inline-block;
+}
+
+.Navbar {
+background-color: rgb(49, 49, 49);
+color: aliceblue;
+position:fixed;
+    top: 0;
+    left: 50px;
+    width: 49%;
+    height: 9%;
+    font-size: large;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+#button {
+    background-color: rgb(49, 49, 49);
+    color: rgb(92, 93, 94);
+    border: 0px;
+}
+
+input[type="text"] {
+    border: 7px solid white; 
+    border-radius: 4px;
+}
+
+#Dropdown {
+    border: none;
+    background-color: rgb(49, 49, 49);
+}
+
+button[type="submit"] {
+    background-color: rgb(49, 49, 49);
+    border-color: green; 
+    color: green;
+    border-style:ridge;
+    border: 1px solid green; 
+    min-height: 31px;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(8, 137, 66);
+    color: aliceblue;
+}
+
+select {
+    background-color: rgb(49, 49, 49);
+    color:aliceblue;
+    border:none;
+}
+
+@media (max-width: 768px) {
+a, button, span, input {
+    display: none !important;}
+}
+
+@media (min-width: 768px) {
+#navbarNav {
+    display: none;
+color: black;}
+}
+
+
+
+
+
