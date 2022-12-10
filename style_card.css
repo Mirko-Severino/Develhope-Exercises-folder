@@ -1,0 +1,26 @@
+img {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    border: 2px solid grey;
+    font-size: large;
+}
+
+h1 {
+    text-align: left;
+    position:relative;
+    left:20px
+}
+
+p, a {
+    position: relative;
+    right: 20px;
+}
+
+
+
+
+
+
