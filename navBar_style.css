@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+.name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+    
+li {
+    list-style: none;
+}
+
+select {
+    background-color: rgb(43, 46, 46);
+    color: #fff;
+    border: none;
+}
+
+.dropdown, #link {
+    color:rgb(184, 181, 181)
+}
+
+#disabled {
+    background-color: rgb(43, 46, 46);
+    color: rgb(184, 181, 181);
+    border:none;
+    font-size: 18px;
+    position: absolute;
+    left:450px;
+    top:21px;
+}
+
+#form {
+    position: absolute;
+    right:10px;
+    top:12px;
+}
+
+#home {
+    font-weight: bold;
+}
+
+#submit {
+    background-color: rgb(43, 46, 46);
+    color: rgb(1, 122, 1);
+    height: 40px;
+    width: 60px;
+    border-color: green; 
+    color: green;
+    border-style:ridge;
+    border: 1px solid green; 
+    border-radius: 4px;
+}
+
+#submit:hover {
+    background-color: rgb(8, 137, 66);
+    color: aliceblue;
+}
+
+#search {
+    border: 7px solid white; 
+    border-radius: 4px;
+    height: 40px;
+    width: 200px;
+    margin-right:5px;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: rgb(43, 46, 46);
+    color: #fff;
+}
+
+.menu {
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+}
+        
+.menu li {
+    padding: 5px 14px;
+}
+
+input[type=checkbox] {
+    display: none;
+} 
+    
+.hamburger {
+    display: none;
+    font-size: 24px;
+}
+    
+@media screen and (max-width: 768px) {
+    .hamburger {
+    display: block;
+    position:absolute;
+    right:50px;
+    top:10px;
+    background-color: rgb(43, 46, 46);
+    color: #fff;
+    border: none;
+} .menu {
+    display: none; 
+}

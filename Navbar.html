@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
-    <meta
-    name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Navbar exercise</title>
-    <link rel="stylesheet" href="Style.css">
-  </head>
-  <body>
-    <nav id="nav" name="nav">
-      <div class="Navbar" id="nav2">
-        <ul id="nav">
-          <li><b>Navbar</b></li>&emsp;
-          <li><a href="https://www.google.it/">Home</a></li>&nbsp;
-          <li><a href="https://www.google.it/">Link</a></li>&nbsp;
-          <span id="dropdown">
-            <li><label for="Dropdown">Dropdown</label></li>
-            <li><select id="Dropdown" name="Dropdown"></select></li>&nbsp;
-          </span>
-          <li><button type="button" id="button" disabled>Disabled</button></li>&ensp;&ensp;
-          <form>  
-          <li><label for="Search"></label></li>
-          <li><input type="text" id="Search" name="Search" placeholder="Search" /></li>
-          <li><button type="submit">Search</button></li>
-          </form>
-            <select class="nav navbar-nav navbar-right" id="navbarNav">
-              <option><a href="https://www.google.it/">Home</a></option>&nbsp;
-              <option><a href="https://www.google.it/">Link</a></option>&nbsp;
-              </optgroup>
-            </select>
-        </ul>
-      </div>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <link rel="stylesheet" href="navBar_style.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="name">Navbar</div>&ensp;&ensp;
+            <ul class="nav-hamburger">
+            <label for="button" class="hamburger"></label>
+            <button type="button" class="hamburger">&#9776;</button>
+                <div class="menu">
+                    <li><a href="http://www.google.it" id="home">Home</a></li>
+                    <li><a href="http://www.google.it"id="link">Link</a></li>
+                    <ul class="Dropdown">
+                        <li class="dropdown">
+                            <label for="dropdown">Dropdown</label>
+                            <select>
+                                <option><a href="/"></a></option>
+                                <option><a href="/"></a></option>
+                                <option><a href="/"></a></option>
+                            </select>
+                            <label form="button_disabled"></label> 
+                            <button type="button" id="disabled" disabled>Disabled</button> 
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <form id="form">
+                                <label for="search"></label>
+                                <input type="text" id="search" placeholder="Search">
+                                <label for="search_button"></label>
+                                <button type="submit" id="submit">Search</button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </ul>
     </nav>
-  </body>
+</body>
 </html>
