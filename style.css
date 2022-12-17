@@ -1,10 +1,18 @@
 :root {
-    background-color: #000303;
+    --black: #011212;
+    --height: 100px;
+    --width: 100px;
+    --coral: #ff8800;
+    --border: 50px;
+}
+
+body {
+    background-color: var(--black);
 }
 
 .ball {
-    width: 300px;
-    height: 300px;
-    background-color: #022f32;
-    border-radius: 300px;
+    height: var(--height);
+    width: var(--width);
+    background-color: var(--coral);
+    border-radius: var(--border);
 }
