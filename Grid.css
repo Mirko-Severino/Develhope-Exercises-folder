@@ -1,0 +1,59 @@
+* {
+box-sizing: border-box;
+}
+
+.grid-layout {
+    display:grid;
+    grid-template-columns: 800px 800px 800px 800px;
+}
+
+.operatori_buttons {
+    display: grid;;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.numeri {
+    display: grid;;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.grid-layout #uguale_button {
+    grid-column: 4;
+    grid-row: 1/4;
+    border-bottom-right-radius: 15px;;
+}
+
+.inserimento {
+    background-color: rgb(68, 67, 67);
+    color: aliceblue;
+    width: 100%;
+    height: 90px;
+    border: 0;
+    text-align: right;
+    font-size: 3em;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+button {
+    height: 140px;
+    font-size: 40px;
+    align-content: center;
+    border-color: rgb(159, 152, 152);
+    border-style: ridge;
+}
+
+.operatori {
+    background-color:rgb(179, 184, 188);
+}
+
+#uguale_button {
+    background-color: rgb(222, 104, 78);
+    height:133%
+}
+
+#uguale_button:hover ,button:hover {
+    background-color: black;
+    color: aliceblue;
+}
+
