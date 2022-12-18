@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    gap:7px;
+}
+
+#yellow{
+    flex:1 1;
+    order: -1;
+}
+
+#red{
+    order:-1;
+}
+
+#green {
+    flex:1 1; 
+}
+
+#orange{
+    flex:2 1;
+}
+
+#blue{
+    flex:1 1;
+}
