@@ -58,9 +58,18 @@ p {
     justify-content: center;
 }
 
+.interactions {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    align-items: center;
+    height: 30px;
+    gap:10px;
+    padding-left:8px;
+}
+
 .interactions img {
     height:20px;
-    
 }
 
 .name {
