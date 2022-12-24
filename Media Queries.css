@@ -36,14 +36,14 @@ p {
     margin-left: 8px;
 }
 
-.dots {
+.sospensione {
     flex: 1;
     font-size: 28px;
     font-weight: 600;
     text-align: center;
 }
 
-.title-container {
+.avatar-container {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -58,7 +58,7 @@ p {
     justify-content: center;
 }
 
-.interactions {
+.lateral_menu {
     display: flex;
     flex-direction: row;
     align-self: flex-start;
@@ -68,7 +68,7 @@ p {
     padding-left:8px;
 }
 
-.interactions img {
+.lateral_menu img {
     height:20px;
 }
 
