@@ -1,0 +1,36 @@
+body section {
+  display: flex;
+  flex-flow: nowrap;
+  padding: 0px 10px 10px 10px;
+}
+body div {
+  border: 1px solid red;
+}
+body h1 {
+  color: green;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+body h1::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  align-items: center;
+  height: 2px;
+  background-color: blue;
+  width: 36%;
+}
+body article {
+  border: 1px solid green;
+  padding: 10px 30px 10px 30px;
+  text-align: center;
+}
+body article:nth-child(1), body article:nth-child(3) {
+  color: blue;
+}
+body article:nth-child(2), body article:nth-child(4) {
+  color: red;
+}
+
+/*# sourceMappingURL=style.css.map */

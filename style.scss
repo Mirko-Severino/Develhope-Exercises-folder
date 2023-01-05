@@ -1,0 +1,48 @@
+$color-primary: red;
+$color-seconday:blue; 
+$color-tertiary: green;
+
+
+body  {
+
+    section {
+        display: flex;
+        flex-flow: nowrap;
+        padding: 0px 10px 10px 10px;
+    }
+
+    div {
+        border: 1px solid $color-primary;
+    }
+
+    h1 {
+        color:$color-tertiary;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    h1::before {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        align-items: center;
+        height: 2px;  
+        background-color: $color-seconday;
+        width: 36%;
+    }
+
+    article {
+        border:1px solid $color-tertiary;
+        padding:10px 30px 10px 30px;
+        text-align:center;
+    }
+
+    article:nth-child(1), article:nth-child(3) {
+        color: $color-seconday;
+    }
+
+    article:nth-child(2), article:nth-child(4) {
+        color: $color-primary;
+    }
+}
