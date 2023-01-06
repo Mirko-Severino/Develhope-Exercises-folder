@@ -1,0 +1,53 @@
+:root {
+  border: 1px solid red;
+  margin: 10px;
+}
+
+div section {
+  display: flex;
+  flex-flow: nowrap;
+  padding: 0px 10px 10px 10px;
+}
+div h1, div h2 {
+  color: green;
+  display: flex;
+  justify-content: center;
+  text-decoration: underline blue;
+}
+div h2 {
+  padding: 1rem;
+  border: 2px solid red;
+  text-decoration: none;
+  width: fit-content;
+  margin-left: 40%;
+}
+div article:first-child, div article:nth-child(3) {
+  color: blue;
+  border-color: green;
+  font-size: 1rem;
+  padding: 10px 30px 10px 30px;
+  text-align: center;
+  border: 2px solid green;
+}
+div article:nth-child(2), div article:nth-child(4) {
+  color: red;
+  border-color: green;
+  font-size: 1rem;
+  padding: 10px 30px 10px 30px;
+  text-align: center;
+  border: 2px solid green;
+}
+div section:nth-last-of-type(1) article {
+  color: green;
+  border-color: blue;
+  font-size: 1rem;
+  padding: 10px 30px 10px 30px;
+  text-align: center;
+  border: 2px solid blue;
+  display: flex;
+  justify-content: center;
+  padding: 10px 84px 10px 84px;
+  font-size: 1.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */
