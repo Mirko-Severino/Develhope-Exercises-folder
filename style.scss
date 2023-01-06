@@ -1,0 +1,56 @@
+@use 'variables';
+
+@function da-px-a-rem($px) {
+    $rem-size: 16;
+    @return calc($px / $rem-size) + rem;
+}
+
+:root {
+border: 1px solid variables.$color-primary;
+margin: 10px;
+}
+
+div {
+section {
+display: flex;
+flex-flow: nowrap;
+padding: 0px 10px 10px 10px;
+}
+h1 {
+color: variables.$color-tertiary;
+display: flex;
+justify-content: center;
+position: relative;
+}
+h1::before {
+content: "";
+position: absolute;
+bottom: -5px;
+align-items: center;
+height: 2px;
+background-color: variables.$color-secondary;
+width: 23%;
+}
+
+@mixin article-style ($color, $border-color) {
+color: $color;
+border-color: $border-color;
+font-size: da-px-a-rem(16);
+padding: 10px 30px 10px 30px;
+text-align: center;
+border: 2px solid $border-color;
+}
+article:first-child, article:nth-child(3) {
+@include article-style (variables.$color-secondary,variables.$color-tertiary);
+}
+article:nth-child(2), article:nth-child(4) {
+@include article-style (variables.$color-primary,variables.$color-tertiary);
+}
+section:nth-last-of-type(1) article {
+@include article-style (variables.$color-tertiary,variables.$color-secondary);
+display: flex;
+justify-content: center;
+padding: 10px 84px 10px 84px;
+font-size: da-px-a-rem(24);
+}
+}
