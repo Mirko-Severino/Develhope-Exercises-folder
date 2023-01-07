@@ -1,0 +1,121 @@
+@use 'variables';
+
+@function da-px-a-rem($px) {
+    $rem-size: 16;
+    @return calc($px / $rem-size) + rem;
+}
+
+:root {
+border: 1px solid variables.$color-primary;
+margin: 10px;
+}
+
+div {
+
+    & section {
+    display: flex;
+    flex-flow: nowrap;
+    padding: 0px 10px 10px 10px;
+    }
+    
+        & h1 {
+        color: variables.$color-tertiary;
+        display: flex;
+        justify-content: center;
+        text-decoration: underline variables.$color-secondary;
+        }
+
+        & h2 {
+        @extend h1;
+        padding: 1rem;
+        border: 2px solid variables.$color-primary;
+        text-decoration: none;
+        width: fit-content;
+        margin-left:40%;
+    }
+
+@mixin fs-rem ($align-items: flex-start,$justify-content:flex-start) {
+    border: 1px solid variables.$color-primary;
+    height: da-px-a-rem(45);
+    width: da-px-a-rem(45);
+    display: flex;
+    flex-direction: column;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+$font-sizes: 1rem, 2rem, 3rem;
+
+@each $font-size in $font-sizes {
+    .fs-#{$font-size} {
+    font-size: $font-size;
+    }
+}
+
+.fs-1rem {
+    @include fs-rem (flex-start,flex-start);
+}
+
+.fs-2rem {
+    @include fs-rem (flex-start,flex-start);
+}
+
+    &:nth-child(10) {
+        background-color: variables.$color-secondary;
+        color:variables.$color-primary;
+    }
+
+.fs-3rem {
+    @include fs-rem (flex-start,flex-start);
+}
+
+@mixin article-style ($color, $border-color) {
+color: $color;
+border-color: $border-color;
+font-size: da-px-a-rem(16);
+padding: 10px 30px 10px 30px;
+text-align: center;
+border: 2px solid $border-color;
+}
+
+article {
+    &:first-child, &:nth-child(3) {
+    @include article-style (variables.$color-secondary,variables.$color-tertiary);
+    }
+
+    &:nth-child(2), &:nth-child(4) {
+    @include article-style (variables.$color-primary,variables.$color-tertiary);
+    }
+}
+
+section {
+    &:nth-last-of-type(1) article {
+    @include article-style (variables.$color-tertiary,variables.$color-secondary);
+    display: flex;
+    justify-content: center;
+    padding: 10px 84px 10px 84px;
+    font-size: da-px-a-rem(24);
+    }
+
+    &:nth-of-type(2) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }    
+    @for $i from 1 through 19 {
+        div:nth-of-type(#{$i}):not(:nth-of-type(10)) {
+            background-color: rgba(0, 0, 0, $i * 0.05);
+        }
+    }
+    @for $i from 1 through 9 {
+        div:nth-of-type(#{$i}) {
+            color: rgba(0, 0, 0, 1 - $i * 0.05);
+        }
+    }
+    @for $i from 11 through 19 {
+        div:nth-of-type(#{$i}) {
+            color: rgba(255, 255, 255, $i * 0.05);
+        }
+    }
+}
+}

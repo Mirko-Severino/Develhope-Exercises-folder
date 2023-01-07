@@ -1,0 +1,209 @@
+:root {
+  border: 1px solid red;
+  margin: 10px;
+}
+
+div section {
+  display: flex;
+  flex-flow: nowrap;
+  padding: 0px 10px 10px 10px;
+}
+div h1, div h2 {
+  color: green;
+  display: flex;
+  justify-content: center;
+  text-decoration: underline blue;
+}
+div h2 {
+  padding: 1rem;
+  border: 2px solid red;
+  text-decoration: none;
+  width: fit-content;
+  margin-left: 40%;
+}
+div .fs-1rem {
+  font-size: 1rem;
+}
+div .fs-2rem {
+  font-size: 2rem;
+}
+div .fs-3rem {
+  font-size: 3rem;
+}
+div .fs-1rem {
+  border: 1px solid red;
+  height: 2.8125rem;
+  width: 2.8125rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+div .fs-2rem {
+  border: 1px solid red;
+  height: 2.8125rem;
+  width: 2.8125rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+div:nth-child(10) {
+  background-color: blue;
+  color: red;
+}
+div .fs-3rem {
+  border: 1px solid red;
+  height: 2.8125rem;
+  width: 2.8125rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+div article:first-child, div article:nth-child(3) {
+  color: blue;
+  border-color: green;
+  font-size: 1rem;
+  padding: 10px 30px 10px 30px;
+  text-align: center;
+  border: 2px solid green;
+}
+div article:nth-child(2), div article:nth-child(4) {
+  color: red;
+  border-color: green;
+  font-size: 1rem;
+  padding: 10px 30px 10px 30px;
+  text-align: center;
+  border: 2px solid green;
+}
+div section:nth-last-of-type(1) article {
+  color: green;
+  border-color: blue;
+  font-size: 1rem;
+  padding: 10px 30px 10px 30px;
+  text-align: center;
+  border: 2px solid blue;
+  display: flex;
+  justify-content: center;
+  padding: 10px 84px 10px 84px;
+  font-size: 1.5rem;
+}
+div section:nth-of-type(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+div section div:nth-of-type(1):not(:nth-of-type(10)) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+div section div:nth-of-type(2):not(:nth-of-type(10)) {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+div section div:nth-of-type(3):not(:nth-of-type(10)) {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+div section div:nth-of-type(4):not(:nth-of-type(10)) {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+div section div:nth-of-type(5):not(:nth-of-type(10)) {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+div section div:nth-of-type(6):not(:nth-of-type(10)) {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+div section div:nth-of-type(7):not(:nth-of-type(10)) {
+  background-color: rgba(0, 0, 0, 0.35);
+}
+div section div:nth-of-type(8):not(:nth-of-type(10)) {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+div section div:nth-of-type(9):not(:nth-of-type(10)) {
+  background-color: rgba(0, 0, 0, 0.45);
+}
+div section div:nth-of-type(10):not(:nth-of-type(10)) {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+div section div:nth-of-type(11):not(:nth-of-type(10)) {
+  background-color: rgba(0, 0, 0, 0.55);
+}
+div section div:nth-of-type(12):not(:nth-of-type(10)) {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+div section div:nth-of-type(13):not(:nth-of-type(10)) {
+  background-color: rgba(0, 0, 0, 0.65);
+}
+div section div:nth-of-type(14):not(:nth-of-type(10)) {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+div section div:nth-of-type(15):not(:nth-of-type(10)) {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+div section div:nth-of-type(16):not(:nth-of-type(10)) {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+div section div:nth-of-type(17):not(:nth-of-type(10)) {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+div section div:nth-of-type(18):not(:nth-of-type(10)) {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+div section div:nth-of-type(19):not(:nth-of-type(10)) {
+  background-color: rgba(0, 0, 0, 0.95);
+}
+div section div:nth-of-type(1) {
+  color: rgba(0, 0, 0, 0.95);
+}
+div section div:nth-of-type(2) {
+  color: rgba(0, 0, 0, 0.9);
+}
+div section div:nth-of-type(3) {
+  color: rgba(0, 0, 0, 0.85);
+}
+div section div:nth-of-type(4) {
+  color: rgba(0, 0, 0, 0.8);
+}
+div section div:nth-of-type(5) {
+  color: rgba(0, 0, 0, 0.75);
+}
+div section div:nth-of-type(6) {
+  color: rgba(0, 0, 0, 0.7);
+}
+div section div:nth-of-type(7) {
+  color: rgba(0, 0, 0, 0.65);
+}
+div section div:nth-of-type(8) {
+  color: rgba(0, 0, 0, 0.6);
+}
+div section div:nth-of-type(9) {
+  color: rgba(0, 0, 0, 0.55);
+}
+div section div:nth-of-type(11) {
+  color: rgba(255, 255, 255, 0.55);
+}
+div section div:nth-of-type(12) {
+  color: rgba(255, 255, 255, 0.6);
+}
+div section div:nth-of-type(13) {
+  color: rgba(255, 255, 255, 0.65);
+}
+div section div:nth-of-type(14) {
+  color: rgba(255, 255, 255, 0.7);
+}
+div section div:nth-of-type(15) {
+  color: rgba(255, 255, 255, 0.75);
+}
+div section div:nth-of-type(16) {
+  color: rgba(255, 255, 255, 0.8);
+}
+div section div:nth-of-type(17) {
+  color: rgba(255, 255, 255, 0.85);
+}
+div section div:nth-of-type(18) {
+  color: rgba(255, 255, 255, 0.9);
+}
+div section div:nth-of-type(19) {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/*# sourceMappingURL=style.css.map */
