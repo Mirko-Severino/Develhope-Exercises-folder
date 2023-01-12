@@ -3,3 +3,11 @@
 $color-primary: red;
 $color-secondary: blue;
 $color-tertiary: green;
+
+
+// function
+
+@function da-px-a-rem($px) {
+    $rem-size: 16;
+    @return calc($px / $rem-size) + rem;
+}

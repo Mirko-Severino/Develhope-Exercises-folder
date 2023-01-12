@@ -1,10 +1,5 @@
 @use 'variables';
 
-@function da-px-a-rem($px) {
-    $rem-size: 16;
-    @return calc($px / $rem-size) + rem;
-}
-
 :root {
 border: 1px solid variables.$color-primary;
 margin: 10px;
@@ -35,7 +30,7 @@ width: 23%;
 @mixin article-style ($color, $border-color) {
 color: $color;
 border-color: $border-color;
-font-size: da-px-a-rem(16);
+font-size: variables.da-px-a-rem(16);
 padding: 10px 30px 10px 30px;
 text-align: center;
 border: 2px solid $border-color;
@@ -51,6 +46,6 @@ section:nth-last-of-type(1) article {
 display: flex;
 justify-content: center;
 padding: 10px 84px 10px 84px;
-font-size: da-px-a-rem(24);
+font-size: variables.da-px-a-rem(24);
 }
 }
