@@ -5,7 +5,6 @@ const person = {
   age: 25,
 };
 
-const filteredPerson = { id: person.id, age: person.age };
-const json = JSON.stringify(filteredPerson);
-
-console.log(json); 
+const { id, age } = person;
+const personJSON = JSON.stringify({ id, age });
+console.log(personJSON);
