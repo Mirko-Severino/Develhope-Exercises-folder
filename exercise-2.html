@@ -1,0 +1,38 @@
+<html>
+  <body>
+    <div id="container" style="display: flex; align-items: center;"></div>
+  </body>
+</html>
+
+<script>
+      const url = 'https://jsonplaceholder.typicode.com/todos/4';
+
+      async function fetchTodo() {
+        try {
+          const response = await fetch(url);
+          const todo = await response.json();
+
+          const title = document.createElement("h2");
+          title.textContent = `Todo: ${todo.title}`;
+
+          const completed = document.createElement("input");
+          completed.type = 'checkbox';
+          completed.checked = todo.completed;
+          completed.disabled = true;
+
+          const container = document.getElementById("container");
+          container.appendChild(title);
+          container.appendChild(completed);
+        } catch (error) {
+          console.error(error);
+        }
+      }
+      window.addEventListener("DOMContentLoaded", fetchTodo);
+    </script>
+  </body>
+</html>
+
+
+
+
+
