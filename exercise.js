@@ -1,43 +1,33 @@
 const isLogged = true;
 
-
-let firstPromise = (isLogged) => {
+const promise1 = (isLogged) => {
     return new Promise((resolve, reject) => {
         if (isLogged) {
-        const randomNumber = Math.random();
-        resolve(randomNumber);
+        resolve(Math.random());
         } else {
-        reject(new Error("Not"));
-        }
-    });
-};
-
-firstPromise(isLogged)
-    .then((randomNumber) => {
-        console.log(`The number is ${randomNumber}`);
-    }).catch((error) => {
-        console.log(error);
-    }
-);
-
-
-let number = 0.6;
-
-let secondPromise = (number) => {
-    return new Promise((resolve, reject) => {
-        if (number > 0.5) {
-        resolve({ name: "John", age: 24 });
-            } else {
-        reject(new Error("Number is not greater than 0.5"));
+        reject("User not logged in");
         }
     });
     };
 
-secondPromise(number)
-    .then((object) => {
-        console.log(object);
-    }
-    ).catch((error) => {
-        console.log(error);
-    }
-);
+const promise2 = (num) => {
+    return new Promise((resolve, reject) => {
+        if (num > 0.5) {
+        resolve({name: "John", age: 24});
+        } else {
+        reject("Number is too low");
+        }
+    });
+};
+
+promise1(isLogged)
+    .then((result) => {
+    return promise2(result);
+    })
+    .then((finalResult) => {
+    console.log(finalResult);
+    })
+    .catch((err) => {
+    console.error(err);
+    });
+
