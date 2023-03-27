@@ -1,7 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Welcome from './App';
+import ReactDOM from "react-dom";
+import App from "./App";
 
-ReactDOM.render(<Welcome name={<strong>John</strong>} age={30} />
-, document.getElementById('root'));
+const root = document.querySelector("#root");
 
+ReactDOM.render(<App />, root);
