@@ -1,0 +1,10 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.welcome {
+  background-color: #8da8a8;
+  border: 1px solid #178484;
+  padding: 3px 8px;
+  margin: 3px;
+}
