@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { LanguageContext } from "./LanguageContext";
+import { LanguageContext } from "./Language";
 
 export default class DisplayLanguage extends Component {
   render() {

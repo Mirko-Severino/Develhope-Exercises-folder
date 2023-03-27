@@ -15,20 +15,9 @@ export default class App extends Component {
     console.log(user);
   };
   render() {
-    const styles = {
-      list: "border overflow-hidden rounded-md m-2 w-[346px]",
-      listItem:
-        "border-b flex justify-between p-2 even:bg-slate-100 last:border-none",
-      deleteBtn:
-        "transition ease-in-out duration-200 text-xs hover:text-red-600 hover:scale-105",
-    };
-
     return (
-      <div className="flex justify-center items-center">
-        <select
-          onChange={this.handleLangChange}
-          className="border p-1 border-slate-700 rounded-md m-4"
-        >
+      <div>
+        <select onChange={this.handleLangChange}>
           <optgroup>
             <option value="it">Italiano</option>
             <option value="en">Inglese</option>
