@@ -17,11 +17,11 @@ store.dispatch(counterSlice.actions.decrement(5));
 store.dispatch(counterSlice.actions.reset());
 
 store.dispatch(
-  todosSlice.actions.add({ id: 0, title: "Vai allo shop", completed: false })
+  todosSlice.actions.add({ id: 0, title: "Vai a casa", completed: false })
 );
 
 store.dispatch(
-  todosSlice.actions.add({ id: 1, title: "Vai al parco", completed: false })
+  todosSlice.actions.add({ id: 1, title: "Vai al supermarket", completed: false })
 );
 
 store.dispatch(todosSlice.actions.edit({ id: 0, data: { completed: true } }));
